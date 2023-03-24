@@ -19,5 +19,8 @@
   "homepage": "https://github.com/sujeong816/js_practice#readme",
   "devDependencies": {
     "eslint": "^8.36.0"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
   }
 }

@@ -1,6 +1,6 @@
 import fs from "fs";
 //const fs = require('fs');
-// let inputData = fs.readFileSync('/dev/stdin').toString().split(' ');
+// let inputData = fs.readFileSync('/dev/stdin').toString().split(' '); 
 let inputData = fs.readFileSync('./index.txt').toString().split(' ');
 
 const n = parseInt(inputData[0]);

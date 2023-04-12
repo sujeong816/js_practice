@@ -1,1 +1,5 @@
-noon
+4
+ab
+aa
+a
+a

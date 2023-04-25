@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://unpkg.com/vue@next"></script>
+    <style>
+      div#app {
+        padding: 30px;
+        margin: 30px auto;
+        width: 400px;
+        border: 1px solid #ccc;
+        box-shadow: 3px 3px 3px #aaa;
+      }
+      div#app div {
+        margin-bottom: 20px;
+      }
+      button {
+        width: 100px;
+        padding: 5px;
+        margin-right: 5px;
+      }
+      p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>exam8</h1>
+      <p>{{ count }}</p>
+      <hr/>
+      <button @click="increase">increse</button>
+      <button @click="decrease">decrease</button>
+    </div>
+    <script type="text/javascript">
+      let app = {
+        data() {
+          return { count: 0 };
+        },
+        methods: {
+            increase() {
+                this.count++
+            },
+            decrease(){
+                this.count--
+            }
+        }
+      };
+      Vue.createApp(app).mount("#app");
+    </script>
+  </body>
+</html>

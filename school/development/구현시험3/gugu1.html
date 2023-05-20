@@ -1,0 +1,41 @@
+<html lang="ko">
+    <head>
+      <meta charset="utf-8" />
+      <script src="https://unpkg.com/vue@next"></script>
+      <style>
+        table {
+          border-collapse: collapse;
+          /* width: 400px; */
+        }
+        td {
+          padding: 5px;
+          border: 1px solid #aaa;
+          text-align: center;
+          width: 200px;
+        }
+      </style>
+    </head>
+    <body>
+        <div id="app">
+            <h1>구구단</h1>
+            <table>
+              <tbody>
+                <tr v-for="col in 9" :key="col">
+                  <td v-for="row in 8" :key="row+1">
+                    {{ row+1 }} * {{ col }} = {{ (row+1) * col }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <script type="text/javascript"></script>
+          <script>
+            Vue.createApp({
+              data() {
+                return {};
+              },
+            }).mount("#app");
+          </script>
+    </body>
+  </html>  

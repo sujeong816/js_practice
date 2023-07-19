@@ -5,5 +5,5 @@ function solution(myString) {
         if(myString[i] == 'x') { myString[i] = ' '}
     }
     
-    return myString.join('').trim().split(' ').sort()
+    return myString.join('').trim().split(' ').filter(i=> i!=='').sort()
 }

@@ -1,9 +1,9 @@
 function solution(a, b) {
-    var arr = [];
-    if(a<b) { 
-        for(let i=a; i<=b; i++) { arr.push(i); }
-    } else {
-        for(let i=b; i<=a; i++) { arr.push(i); }
+    let min = Math.min(a,b)
+    let max = Math.max(a,b)
+    
+    for(let i=min+1; i<=max; i++) {
+        min += i
     }
-    return arr.reduce((a,b)=>a+b);
+    return min
 }

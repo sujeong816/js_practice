@@ -1,6 +1,7 @@
 function solution(ab, signs) {
+    let answer = 0
     for(let i=0; i<ab.length; i++) {
-        if(signs[i] == false) { ab[i] *= -1; }
+        signs[i] ? answer += ab[i] : answer += -ab[i] 
     }
-    return ab.reduce((a,b) => a+b);
+    return answer
 }

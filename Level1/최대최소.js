@@ -4,6 +4,5 @@ function solution(n, m) {
         if(n%i==0 && m%i==0) { max = i; }
     }
     min = n*m / max;
-    answer.push(max); answer.push(min);
-    return answer;
+    return [max, min]
 }

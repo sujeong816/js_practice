@@ -1,9 +1,3 @@
 function solution(s) {
-    s = [...s]; var answer = '';
-    if(s.length%2==0) {
-        answer += s[(s.length/2)-1]; answer += s[(s.length/2)]; 
-    } else {
-        answer += s[parseInt(s.length/2)];
-    }
-    return answer;
+    return s.substr(Math.ceil(s.length/2)-1, s.length%2==1? 1 : 2)
 }

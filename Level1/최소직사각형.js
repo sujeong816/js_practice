@@ -11,7 +11,6 @@
 //     }
 //     return Math.max(...left)*Math.max(...right);
 // }
-// solution([[60, 50], [30, 70], [60, 30], [80, 40]])
 function solution(sizes) {
     let left = []; let right = []
     
@@ -24,3 +23,4 @@ function solution(sizes) {
     
     return Math.max(...left) * Math.max(...right)
 }
+solution([[60, 50], [30, 70], [60, 30], [80, 40]])
